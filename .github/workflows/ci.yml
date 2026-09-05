@@ -1,0 +1,23 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Test domain, orchestration, and HTTP adapter
+        run: node --test tests/*.test.ts
+      - name: Run deterministic contract scenarios
+        run: node eval/run.ts
+      - name: Smoke test the offline CLI
+        run: node src/cli.ts --demo --json
