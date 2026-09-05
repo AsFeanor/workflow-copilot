@@ -1,0 +1,18 @@
+{
+  "asOf": "2026-09-05",
+  "members": [
+    { "id": "M001", "name": "Demo Ada", "status": "active", "packageEndsOn": "2026-09-05", "remainingLessons": 1 },
+    { "id": "M002", "name": "Demo Deniz", "status": "active", "packageEndsOn": "2026-09-08", "remainingLessons": 2 },
+    { "id": "M003", "name": "Demo Ekin", "status": "active", "packageEndsOn": "2026-09-12", "remainingLessons": 4 },
+    { "id": "M004", "name": "Demo Mira", "status": "inactive", "packageEndsOn": "2026-09-07", "remainingLessons": 0 },
+    { "id": "M005", "name": "Demo Arda", "status": "active", "packageEndsOn": "2026-10-05", "remainingLessons": 8 },
+    { "id": "M006", "name": "Demo Nil", "status": "active", "packageEndsOn": "2026-09-04", "remainingLessons": 0 }
+  ],
+  "lessons": [
+    { "id": "L001", "memberId": "M001", "startsAt": "2026-09-05T10:00:00Z", "status": "scheduled" },
+    { "id": "L002", "memberId": "M002", "startsAt": "2026-09-08T18:00:00Z", "status": "scheduled" },
+    { "id": "L003", "memberId": "M003", "startsAt": "2026-09-12T23:59:59Z", "status": "scheduled" },
+    { "id": "L004", "memberId": "M002", "startsAt": "2026-09-06T09:00:00Z", "status": "cancelled" },
+    { "id": "L005", "memberId": "M006", "startsAt": "2026-09-04T15:00:00Z", "status": "completed" }
+  ]
+}
