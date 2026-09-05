@@ -1,0 +1,14 @@
+{
+  "name": "workflow-copilot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An evidence-linked operations copilot with bounded tool use and draft-only actions.",
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "demo": "node src/cli.ts --demo",
+    "ask": "node --env-file-if-exists=.env src/cli.ts",
+    "test": "node --test tests/*.test.ts",
+    "eval": "node eval/run.ts"
+  }
+}
